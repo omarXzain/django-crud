@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Restaurant</title>
+    <link rel="stylesheet"  href="{%  static  'style.css'  %}">
+    <style>
+        li{
+            margin: 3%;
+        }
+    </style>
+</head>
+
+
+{% block main %}
+<h3 class="hhh"> Welcome to CRUD Restaurant</h3>
+<h4>List of Food:</h3>
+<ul>
+    {% for crud in object_list %}
+        <li>
+        <a href="{% url 'crud_details' crud.pk %}"> <span class="food">{{ crud.name }}</span><br></a>
+        <a href="{% url 'crud_delete' crud.pk %}"><span class="delete"> Delete </span></a><br>
+        <a href="{% url 'crud_update' crud.pk %}"><span class="update"> Update </span></a><br>
+        </li>
+    {% endfor %}
+    </ul>
+{% endblock main%}

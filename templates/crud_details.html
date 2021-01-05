@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block main %}
+  <h2> Here is your order</h2>
+  <h3>Name:  {{ crud.name }}</h3>
+  <h3>Rank:  {{ crud.rank }}</h3>
+  <h3>Eater: {{ crud.eater }}</h3>
+  <a href="{% url 'crud_delete' crud.pk %}">Delete</a>
+  <a href="{% url 'crud_update' crud.pk %}">Update</a>
+{% endblock main%}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Restaurant</title>
+    <style>
+        main {
+
+            font-size: x-large;
+            margin-left: 5pc;
+            transform: rotate(-8.5deg);
+        }
+
+        body {
+            background-image: url(https://pbs.twimg.com/media/DBwmSRGUIAAdxWD.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+
+        ul {
+            list-style-type: none;
+            text-align: center;
+            transform: rotate(-3.2deg);
+            display: flex;
+            margin-left: -6pc;
+            margin-top: -15px;
+        }
+
+
+        .hhh{
+            transform: rotate(1deg);
+            transition: 100ms;
+            border: 1px double black;
+            box-shadow: 3px 4px 5px 5px rgb(44, 38, 38);
+            width: 26%;
+            transition: 1234ms;
+        }
+        .hhh:hover{
+            transition: 1234ms;
+            font-size: 30px;
+            color: palevioletred;
+            transform: rotate(1deg);
+            transition: 100ms;
+            border: 1px double black;
+            box-shadow: 3px 4px 5px 5px rgb(44, 38, 38);
+            width: 28%;
+        }
+        .food{
+            color: purple;
+            margin-top: -7%;
+            transition: 100ms;
+        }
+        .food:hover {
+            font-size: 26px;
+            transition: 100ms;
+            color: blue;
+        }
+
+        input{
+            margin-left: 9%;
+            width: 7%;
+            height: 20px;
+            border-radius: 15%;
+            cursor: pointer;
+            background-color: rgb(202, 168, 233);
+        }
+        .update {
+            color: green;
+            border: 1px solid black;
+            background-color: rgb(209, 198, 198);
+        }
+        .update:hover {
+            color: green;
+            border: 1px double black;
+            background-color: rgb(209, 198, 198);
+            font-size: 20px;
+            transition: 100ms;
+            box-shadow: 1px 2px 3px 3px rgb(44, 38, 38);
+        }
+        .delete {
+            color: red;
+            border: 1px solid black;
+            background-color: rgb(209, 198, 198);
+
+        }
+        .delete:hover {
+            color: red;
+            border: 2px double black;
+            background-color: rgb(209, 198, 198);
+            font-size: 20px;
+            transition: 100ms;
+            box-shadow: 1px 2px 3px 3px rgb(44, 38, 38);
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        li {
+            margin: 1%;
+        }
+
+        h1 {
+            color: white;
+            margin-left: 85pc;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-style: italic;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        {% block main %}
+        {% endblock main %}
+    </main>
+</body>
+
+</html>
